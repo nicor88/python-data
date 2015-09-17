@@ -7,7 +7,6 @@ x_axis = np.linspace(1, 10, 10, endpoint=True)
 print(x_axis)
 y_axix = np.random.randint(2,40,10)
 print(y_axix)
-
 p = figure()
-p.line(x_axis, y_axix, line_width=5)
+p.line(x_axis, y_axix, line_width=3,color="blue")
 show(p)
