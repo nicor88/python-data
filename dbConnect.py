@@ -1,6 +1,7 @@
 __author__ = 'nicor'
 
 import psycopg2
+### psycopg2 needs postgresql-server-dev-all , install with sudo apt-get install postgresql-server-dev-all
 
 dbname = 'db'
 dbuser = 'user'
