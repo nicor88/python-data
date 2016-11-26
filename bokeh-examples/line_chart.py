@@ -1,5 +1,3 @@
-__author__ = 'nicor88'
-
 import numpy as np
 from bokeh.plotting import figure, output_file, show
 output_file("lineChart.html")
