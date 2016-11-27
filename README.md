@@ -12,7 +12,7 @@
 
 Another way is to setup the env with PyCharm in Preferences -> Project -> Interpreter
 
-## Update Conda Environment File`
+## Update Conda Environment File
 
 `conda env export --file conda-env.yml`
 
