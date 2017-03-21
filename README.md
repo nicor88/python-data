@@ -5,16 +5,14 @@
 
 
 ## Conda Environment
-
-`conda env create -f conda-env.yml`
-
-`source activate python-data-env`
-
-Another way is to setup the env with PyCharm in Preferences -> Project -> Interpreter
-
-## Update Conda Environment File
-
-`conda env export --file conda-env.yml`
-
-To see all the packages in the current environment use: `conda list
- 
+<pre># Create a conda env from yml file
+conda env create -f conda-env.yml
+# activate the env
+source activate python-data-env
+# update conda env file after installing libs
+conda env export --file conda-env.yml
+# list all the packages in conda env
+conda list
+</pre>
+### Conda Env in PyCharm
+Go to Preferences -> Project -> Interpreter and setup the env path
