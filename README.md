@@ -4,8 +4,8 @@
 * [Install Miniconda](http://conda.pydata.org/docs/install/quick.html)
 * Install Docker
 
-## Conda Environment
-<pre># create env
+## Setup Conda Environment
+<pre># Create a conda env from yml file
 conda env create -f conda-env.yml
 
 # activate env
@@ -18,6 +18,5 @@ conda list
 conda env export --file conda-env.yml
 </pre>
 
-### Setup conda inside PyCharm
+### Setup Conda inside PyCharm
 Another way is to setup the env with PyCharm in Preferences -> Project -> Interpreter
- 
