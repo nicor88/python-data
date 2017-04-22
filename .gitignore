@@ -1,2 +1,12 @@
 .idea
 bokeh-examples/*.html
+
+# data
+data/
+*/data/
+
+# pyspark
+pyspark/notebooks/.checkpoints/
+pyspark/notebooks/spark-warehouse/
+pyspark/notebooks/metastore_db/
+pyspark/notebooks/derby.log
