@@ -4,6 +4,8 @@ bokeh-examples/*.html
 # data
 data/
 */data/
+*/data-mysql
+*/data-postgres
 
 # pyspark
 pyspark/notebooks/.checkpoints/
