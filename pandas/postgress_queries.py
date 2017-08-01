@@ -15,6 +15,11 @@ postgres_engine = create_engine('postgresql://{user}:{password}@{hostname}:5432/
 # tables = pd.read_sql('SELECT * FROM pg_catalog.pg_tables;', con=postgres_engine)
 
 film_df = pd.read_sql('SELECT * FROM film;', con=postgres_engine)
+film_category_df = pd.read_sql('SELECT * FROM film_category;', con=postgres_engine)
+category_df = pd.read_sql('SELECT * FROM category;', con=postgres_engine)
+film_with_category = pd.merge(pd.merge(film_df, film_category_df, on=['film_id'], how='inner'), category_df, on=['category_id'], how='inner')
+film_with_category = film_with_category.rename(columns={'name': 'category'})
+# film_with_category = film_with_category.rename(columns={'name': 'category'})
 
 film_by_category_qry = """select category.name as category_name,
 count(distinct film.title) as total_film,
