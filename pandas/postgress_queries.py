@@ -30,5 +30,17 @@ join    category using(category_id)
 group by category.name
 order by category_name;
 """
-
 df = pd.read_sql(film_by_category_qry, con=postgres_engine)
+
+film_by_category_qry_with_filter = """select category.name as category_name,
+count(distinct film.title) as total_film,
+string_agg(film.title,',')
+from    film
+join    film_category using(film_id)
+join    category using(category_id)
+where film.title = '{title}'
+group by category.name
+order by category_name;
+"""
+
+df_filtered = pd.read_sql(film_by_category_qry_with_filter.format(title='Zorro Ark'), con=postgres_engine)
