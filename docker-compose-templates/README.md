@@ -19,3 +19,8 @@ docker rm $(docker ps -a -q)
 # Remove all the images
 docker rmi $(docker images -a -q)
 </pre>
+
+## SSH Container
+<pre>docker ps | grep container-name
+docker exec -it ContainerId /bin/bash
+</pre>
