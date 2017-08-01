@@ -24,6 +24,7 @@ dependencies:
 - pyyaml=3.12=py36_0
 - readline=6.2=2
 - requests=2.14.2=py36_0
+- ruamel_yaml=0.11.14=py36_1
 - s3transfer=0.1.10=py36_0
 - setuptools=27.2.0=py36_0
 - six=1.10.0=py36_0
