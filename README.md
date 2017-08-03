@@ -9,7 +9,7 @@
 conda env create -f conda-env.yml
 
 # activate env
-source activate python-data-env
+source activate python-data
 
 # list all packages
 conda list

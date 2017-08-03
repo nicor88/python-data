@@ -4,9 +4,13 @@ bokeh-examples/*.html
 # data
 data/
 */data/
+*/data-mysql
+*/data-postgres
 
 # pyspark
 pyspark/notebooks/.checkpoints/
 pyspark/notebooks/spark-warehouse/
 pyspark/notebooks/metastore_db/
 pyspark/notebooks/derby.log
+
+*/settings.yml
