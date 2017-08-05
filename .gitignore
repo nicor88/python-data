@@ -14,3 +14,4 @@ pyspark/notebooks/metastore_db/
 pyspark/notebooks/derby.log
 
 */settings.yml
+*/twitter.yml
