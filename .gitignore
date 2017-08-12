@@ -1,5 +1,7 @@
 .idea
+snippets
 bokeh-examples/*.html
+
 
 # data
 data/
