@@ -42,6 +42,8 @@ def add_number(number, lowers, highers):
     :param highers: heap with min on top, contain the highers numbers
     :return:
     """
+
+    # lowers[0] is the max in the lowers heap
     if len(lowers) == 0 or number < lowers[0]:
         lowers.heappush(number)
     else:
@@ -56,7 +58,7 @@ def rebalance(lowers, highers):
     :return:
     """
     bigger_heap = lowers if len(lowers) > len(highers) else highers
-    smaller_heap = lowers if len(lowers) < len(highers) else highers
+    smaller_heap = highers if len(lowers) > len(highers) else lowers
 
     if len(bigger_heap) - len(smaller_heap) >= 2:
         smaller_heap.heappush(bigger_heap.heappop())
